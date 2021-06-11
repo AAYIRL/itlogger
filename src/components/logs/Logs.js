@@ -27,7 +27,7 @@ const Logs = ({ log: { logs, loading }, getLogs }) => {
       ) : (
         logs !== null &&
         logs.map((log) => {
-          return <LogItem log={log} />;
+          return <LogItem log={log} key={log.id} />;
         })
       )}
     </ul>
